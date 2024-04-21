@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+
+}
+
+
+h1 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 48px; 
+  margin-left: 2cm;
+  width: 80%; 
+  line-height: 1.4; 
+  color: #000000; 
+}
+body {
+  margin: 0;
+  background-color: rgb(223, 232, 244);
+  font-family: 'Roboto', sans-serif;
+}
+
+#wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.card {
+  height: 400px;
+  width: 285px;
+  background-color: rgb(159, 199, 255);
+  border-radius: 15px;
+  padding: 5px;
+  margin: 1cm;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.3);
+  box-shadow: 0px 0px 30px rgba(94, 127, 172, 0.698);
+
+}
+
+.card-content {
+  position: relative;
+  z-index: 2;  /* Höherer z-index, damit es über dem Bild liegt */
+  border: 3px solid #ffffff;
+  height: 100%;
+  border-radius: 10px;
+  display: grid;
+}
+
+
+.card-title {
+  z-index: 10; 
+  font-size:x-large;
+  font-weight: bold;
+  width: 100%; 
+  padding-top: 10px;
+  
+}
+
+.card-group {
+  font-size: smaller;
+  font-weight: 1 c00;
+}
+
+
+.rocket-image {
+  grid-column: span 4 ; 
+  display: flex;
+  justify-content: flex-start; 
+  overflow: hidden;
+  height: 210px; 
+  background-size: cover; 
+  background-position: center; 
+  color: rgb(255, 255, 255);
+  padding-left: 10px;
+  
+}
+
+.rocket-image img {
+  position: relative;
+  z-index: 1;  /* Niedrigerer z-index */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.goal-icon {
+  grid-column: span 4;
+  text-align: left;
+  font-size: small;
+  font-weight: 400;
+  padding-left: 10px;
+}
+
+.rocket-info {
+  font-size: 90%;
+  grid-column: span 4;
+  padding-left: 10px;
+  font-size: small;
+  font-weight: 600;
+  
+}
+.stat-icon {
+  grid-column: span 1;
+  text-align: left;
+  font-size: small;
+  font-weight: 400;
+  padding-left: 10px;
+  line-height: 1.1;
+}
+
+.stat-value {
+  grid-column: span 1;
+  text-align: right;
+  text-align: end;
+  font-size: small;
+  font-weight: 500;
+  padding-right: 10px;
+  
+
+}
